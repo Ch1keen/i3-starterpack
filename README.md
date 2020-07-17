@@ -75,23 +75,23 @@ I recommend You to listen [Scenes from a Memory](https://www.youtube.com/playlis
 ## Installation
 - **First, install i3 of course** <br />
 `sudo apt-get install i3` <br />
-It will give You i3-wm, dunst, i3lock, i3status, and suckless-tools.
+It will give You i3-wm, dunst, i3lock, i3status, and ~~suckless-tools.~~
 If i3-wm, dunst, i3lock, i3status, and suckless-tools are not installed automatically, just install them manually. <br />
-`sudo apt-get install i3-wm dunst i3lock i3status suckless-tools` <br />
+`sudo apt-get install i3-wm dunst i3lock i3status` <br />
 
 - **Then install some additional packages to make your desktop enjoyable** <br />
-`sudo apt-get install compton hsetroot rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior`
+`sudo apt-get install compton rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior`
 
 ## Explanations of Additional Packages
 - Compton is a compositor to provide some desktop effects like shadow, transparency, fade, and transiton. 
-- Hsetroot is a wallpaper handler. i3 has no wallpaper handler by default.
-- URxvt is a lightweight terminal emulator, part of *i3-sensible-terminal*.
+- Hsetroot is a wallpaper handler. i3 has no wallpaper handler by default. (Not available in OpenBSD)
+- URxvt is a lightweight terminal emulator, part of *i3-sensible-terminal*. (Not tested in openBSD)
 - Xsel is a program to access X clipboard. We need it to make copy-paste in URxvt available. Hit Alt+C to copy, and Alt+V to paste. 
 - Rofi is a program launcher, similar with dmenu but with more options.
 - Noto Sans and M+ are my favourite fonts used in my configuration.
 - Xsettingsd is a simple settings daemon to load fontconfig and some other options. Without this, fonts would look rasterized in some applications.
 - LXAppearance is used for changing GTK theme icons, fonts, and some other preferences.
-- Scrot is for taking screenshoot. I use it in my configuration for Print Screen button.
+- Scrot is for taking screenshoot. I use it in my configuration for Print Screen button. (Not tested in openBSD)
 I set my Print Screen button to take screenshoot using scrot, then automatically open it using Viewnior image viewer. <br />
 
 ## Copying Configurations
